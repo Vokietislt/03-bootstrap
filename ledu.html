@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ledu</title>
+    <style>
+      html,
+      body,
+      main {
+        height: 100%;
+      }
+      body {
+        background-color: red;
+      }
+      .relative {
+        position: relative;
+        height: 300px;
+      }
+      .leduSpalva {
+        position: absolute;
+        background: red;
+        width: 100%;
+        height: 100%;
+        background: #eeaeca;
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 0.49) 0%,
+          rgba(191, 181, 218, 0.525) 42%,
+          rgb(200, 135, 14) 75%,
+          red 100%
+        );
+      }
+      img {
+        width: 100%;
+        box-shadow: 0 0 0 red;
+        object-fit: scale-down;
+      }
+      .tinted-image::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ff4f2e; /* The orange tint */
+        mix-blend-mode: multiply; /* Blending effect */
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="relative">
+        <div class="leduSpalva"></div>
+        <img src="./644a49c5633450a104d0cd32d2495c99.png" alt="" />
+      </div>
+    </main>
+  </body>
+</html>

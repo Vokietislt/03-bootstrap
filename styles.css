@@ -1,0 +1,6 @@
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-link:hover{
+    color: #EB5757;
+}
